@@ -16,6 +16,7 @@ void* Thread( void *arg )
     int i;
     for ( i=0; i<30; i++ )
         printf( "thread %d: %dth iteration\n", *(int*)arg, i );
+    printf( "hotfix!\n");
     pthread_exit(0);  /* 쓰레드 종료 함수 */
 }
 //-------------------------------------------------------------
