@@ -14,6 +14,7 @@ int thread_args[3] = { 0, 1, 2, 3 };  /* 쓰레드가 사용할 인자 */
 void* Thread( void *arg )
 {
     int i;
+    printf ("iss53\n");
     for ( i=0; i<30; i++ )
         printf( "thread %d: %dth iteration\n", *(int*)arg, i );
     printf( "hotfix!\n");
@@ -47,6 +48,6 @@ thread 1: 2th iteration
 thread 2: 0th iteration
 thread 2: 1th iteration
 thread 2: 2th iteration
-
+thread 3: 0th iteration
 ****************************************/
 
